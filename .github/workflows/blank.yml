@@ -30,7 +30,7 @@ jobs:
       - name: Run Postman tests and export HTML report
   
         run: |
-          newman TestWarez \
+          newman TestWarez.json \
           -e TestWarez1.json \
             --reporters cli,htmlextra \
             --reporter-htmlextra-export reports/results.html
